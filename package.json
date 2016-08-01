@@ -1,11 +1,11 @@
 {
-  "name": "caminte",
-  "description": "ORM for every database: redis, mysql, neo4j, mongodb, rethinkdb, postgres, sqlite, tingodb",
-  "version": "0.2.13",
+  "name": "camintoz",
+  "description": "Cloning ORM for database: postgres",
+  "version": "0.0.1.1",
   "author": {
-    "name": "Aleksej Gordejev",
-    "email": "aleksej@gordejev.lv",
-    "url": "http://www.gordejev.lv"
+    "name": "Zainul Masadi",
+    "email": "zainulmasadi90@gmail.com",
+    "url": ""
   },
   "homepage": "http://camintejs.com/",
   "license": "MIT",
@@ -38,7 +38,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/biggora/caminte.git"
+    "url": "git://github.com/zainul/camintoz.git"
   },
   "main": "index.js",
   "scripts": {

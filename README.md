@@ -1,7 +1,7 @@
 [![Build Status](https://travis-ci.org/biggora/caminte.png?branch=master)](https://travis-ci.org/biggora/caminte)
 [![Dependency Status](https://gemnasium.com/biggora/caminte.png)](https://gemnasium.com/biggora/caminte)
 [![NPM version](https://badge.fury.io/js/caminte.png)](http://badge.fury.io/js/caminte)
-## About CaminteJS
+## This Repo Cloning To CaminteJS
 
 CaminteJS is cross-db ORM for nodejs, providing common interface to access
 most popular database formats.
@@ -22,9 +22,9 @@ most popular database formats.
     <tr>
       <td><img width="100" src="https://github.com/biggora/caminte/raw/master/media/couchdb.png"/></td>
       <td><img width="100" src="https://github.com/biggora/caminte/raw/master/media/rethinkdb.png"/></td>
-      <td><img width="100" src="https://github.com/biggora/caminte/raw/master/media/redis.png"/></td> 
+      <td><img width="100" src="https://github.com/biggora/caminte/raw/master/media/redis.png"/></td>
       <td><img width="100" src="https://github.com/biggora/caminte/raw/master/media/tingodb.png"/></td>      
-      <td><img width="100" src="https://github.com/biggora/caminte/raw/master/media/neo4j.png"/></td> 
+      <td><img width="100" src="https://github.com/biggora/caminte/raw/master/media/neo4j.png"/></td>
       <td><img width="100" src="https://github.com/biggora/caminte/raw/master/media/arangodb.png"/></td>
       <td><img width="100" src="https://github.com/biggora/caminte/raw/master/media/cassandra.png"/></td>
     </tr>
@@ -60,35 +60,35 @@ First install [node.js](http://nodejs.org/). Then:
 
 ## Online model creator
 
-Create CaminteJS Models in few minutes with [online model creator](http://www.camintejs.com/en/creator). 
+Create CaminteJS Models in few minutes with [online model creator](http://www.camintejs.com/en/creator).
 
 ## CLI
 
 Use the command line interface tool, `caminte`, to quickly create an models.
 
     $ npm install caminte-cli -g
-    
+
 Create structure:
 
     $ caminte -i -a mysql
-    
+
 Create model:
 
     $ caminte -m User active:int name email password note:text created:date
     # with tests  
     $ caminte -t -m User active:int name email password note:text created:date
-    
+
 Create model and routes:
 
     $ caminte -c Post published:bool title content:text created:date
     # with tests    
     $ caminte -t -c User active:int name email password note:text created:date
-    
-    
+
+
 Create model and routes from SQL dump:
 
     $ caminte -d dumpfile.sql
-    
+
 [caminte-cli more details.](https://github.com/biggora/caminte-cli)
 
 
@@ -145,7 +145,7 @@ User.hasMany(Post,   {as: 'posts',  foreignKey: 'userId'});
 
 // Common API methods
 
-var user = new User({ 
+var user = new User({
     name:       'Alex',
     email:      'example@domain.aga',
     age:        40,
@@ -244,6 +244,5 @@ SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 - Follow [@biggora](https://twitter.com/#!/biggora) on Twitter for updates.
 - Report issues on the [github issues](https://github.com/biggora/caminte/issues) page.
 
-[![Analytics](https://ga-beacon.appspot.com/UA-22788134-5/caminte/readme)](https://github.com/igrigorik/ga-beacon) 
+[![Analytics](https://ga-beacon.appspot.com/UA-22788134-5/caminte/readme)](https://github.com/igrigorik/ga-beacon)
 [![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/biggora/caminte/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
-
