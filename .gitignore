@@ -5,3 +5,7 @@ node_modules
 db
 tmp
 coverage
+/models
+app.js
+database.js
+models.js

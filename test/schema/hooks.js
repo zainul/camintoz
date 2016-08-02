@@ -5,7 +5,7 @@
 if (!process.env.NODE_ENV) {
     process.env.NODE_ENV = 'test';
 }
-var driver = process.env.CAMINTE_DRIVER || 'sqlite';
+var driver = process.env.CAMINTE_DRIVER || 'pgsql';
 var should = require('should');
 var caminte = require('../../');
 var config = require('./../lib/database');
@@ -28,7 +28,7 @@ describe(driver + ' - schema hooks:', function () {
     after(function (done) {
         User.destroyAll(done);
     });
-    
+
     it("#afterInitialize", function (done) {
         User.afterInitialize = function () {
             User.afterInitialize = null;
